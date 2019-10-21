@@ -3,7 +3,7 @@
   <arg name="gui" default="true" />
   <arg name="rvizconfig" default="$(find kitbot_urdf)/rviz/urdf.rviz" />
 
-  <param name="robot_description" command="$(find kitbot)/urdf/model.xml" />
+  <param name="robot_description" textfile="$(find kitbot_urdf)/urdf/r2d2_moveable.urdf" />
   <param name="use_gui" value="$(arg gui)"/>
 
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
