@@ -19,6 +19,11 @@
       </geometry>
       <material name="blue"/>
     </visual>
+    <collision>
+      <geometry>
+        <box size=".8 .6 .1"/>
+      </geometry>
+    </collision>
   </link>
 
   <link name="front_right_wheel">
@@ -29,6 +34,12 @@
       <origin rpy="0 1.57075 1.57075" xyz="0 -0.0127 0"/>
       <material name="white"/>
     </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.0254" radius="0.0762"/>
+      </geometry>
+      <origin rpy="0 1.57075 1.57075" xyz="0 -0.0127 0"/>
+    </collision>
   </link>
 
   <joint name="base_to_front_right_wheel" type="continuous">
@@ -46,6 +57,12 @@
       <origin rpy="0 1.57075 1.57075" xyz="0 -0.0127 0"/>
       <material name="white"/>
     </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.0254" radius="0.0762"/>
+      </geometry>
+      <origin rpy="0 1.57075 1.57075" xyz="0 -0.0127 0"/>
+    </collision>
   </link>
 
   <joint name="base_to_back_right_wheel" type="continuous">
@@ -63,6 +80,12 @@
       <origin rpy="0 1.57075 1.57075" xyz="0 0.0127 0"/>
       <material name="white"/>
     </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.0254" radius="0.0762"/>
+      </geometry>
+      <origin rpy="0 1.57075 1.57075" xyz="0 0.0127 0"/>
+    </collision>
   </link>
 
   <joint name="base_to_front_left_wheel" type="continuous">
@@ -80,6 +103,12 @@
       <origin rpy="0 1.57075 1.57075" xyz="0 0.0127 0"/>
       <material name="white"/>
     </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.0254" radius="0.0762"/>
+      </geometry>
+      <origin rpy="0 1.57075 1.57075" xyz="0 0.0127 0"/>
+    </collision>
   </link>
 
   <joint name="base_to_back_left_wheel" type="continuous">
